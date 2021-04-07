@@ -1,0 +1,67 @@
+.TodoItem {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 3px solid var(--black);
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.2rem;
+	padding-right: 0.2rem;
+
+	&-Contents {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+
+		&-Index {
+			color: var(--black);
+			margin-right: 0.3rem;
+			font-size: 1.2rem;
+		}
+	}
+
+	&-Text {
+		color: var(--black);
+		font-size: 1.2rem;
+		cursor: pointer;
+
+		&-Completed {
+			text-decoration: line-through;
+		}
+	}
+
+	&-ModifyInput {
+		outline: none;
+		border: none;
+		background: none;
+		font-size: 1.2rem;
+		color: var(--black);
+	}
+
+	&-Icons {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+
+		& > * {
+			cursor: pointer;
+		}
+
+		&-Modify {
+			color: var(--blue);
+			font-size: 2rem;
+			margin-right: 1rem;
+		}
+
+		&-Delete {
+			color: var(--red);
+			font-size: 3rem;
+		}
+	}
+
+	&-Check {
+		color: var(--black);
+		font-size: 3rem;
+		cursor: pointer;
+	}
+}
