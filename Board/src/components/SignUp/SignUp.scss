@@ -1,0 +1,15 @@
+.SignUp {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+
+	&-InputWrap {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+	}
+}
